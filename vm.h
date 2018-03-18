@@ -2,7 +2,7 @@
 #ifndef VM_H
 #define VM_H
 
-#include <string.h>
+#include <cstring>
 #include <iomanip>
 #include <vector>
 #include <map>
