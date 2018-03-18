@@ -46,17 +46,17 @@ void VM::refresh(const int32_t *latest_data, const Blockchain &blockchain){
     psp     = 0;
     is_halt = false;
     pblockchain = &blockchain;
-    memcpy(mem,      latest_data, sizeof mem);
-    memcpy(bin_data, latest_data, sizeof mem);
-    memset(return_stack, 0, sizeof return_stack);
-    memset(data_stack, 0, sizeof data_stack);
+    std::memcpy(mem,      latest_data, sizeof mem);
+    std::memcpy(bin_data, latest_data, sizeof mem);
+    std::memset(return_stack, 0, sizeof return_stack);
+    std::memset(data_stack, 0, sizeof data_stack);
 }
 
 inline void VM::load() {
     if (ib < pblockchain->chain.size())
-        memcpy(mem, pblockchain->chain[ib].data, sizeof mem);
+        std::memcpy(mem, pblockchain->chain[ib].data, sizeof mem);
     else
-        memcpy(mem, bin_data, sizeof mem);
+        std::memcpy(mem, bin_data, sizeof mem);
 }
 
 void VM::displayOp(const int32_t &idx) const{
