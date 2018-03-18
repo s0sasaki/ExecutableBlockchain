@@ -1,5 +1,5 @@
 
-#include <assert.h>
+#include <cassert>
 #include "compiler.h"
 
 int main()
