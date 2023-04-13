@@ -1,14 +1,15 @@
 
 # Executable Blockchain
 
-An executable blockchain, which consists of:
+A blockchain influenced by Ethereum, featuring a Forth compiler. 
+Key components include:
 
- - Block Chain with SHA256
+ - Blockchain utilizing SHA256
  - Virtual Machine with stack-machine instruction sets
  - Compiler for a Forth-like language
 
 
-## Examples:
+## Functionalities and Examples:
 
 **1st Block:**
  Forth uses the so-called Reverse Polish Notation (RPN). 
